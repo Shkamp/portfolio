@@ -5,7 +5,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { positions } from '@material-ui/system';
 
-
+const style = {
+    bottom : 0,
+}
 export default class Footer extends React.Component {
     constructor(props){
         super(props);
@@ -26,7 +28,7 @@ export default class Footer extends React.Component {
     }
     render() {
         return (
-            <Paper >
+            <Paper style={style}>
                 <Tabs
                     value ={this.state.value}
                     onChange = {this.setPage}
