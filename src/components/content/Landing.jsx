@@ -10,14 +10,14 @@ const styles = {
 }
 
 export default props =>
-    <div>
+    <div className="neon">
 
        
 
             <Typography variant='h3'>
                 Hello there!
             </Typography>
-            <p>
+            <p className="text">
                 I am a software and web developer. 
             </p>
             

@@ -6,7 +6,8 @@ import Tab from '@material-ui/core/Tab';
 import { positions } from '@material-ui/system';
 
 const style = {
-    bottom : 0,
+    position: 'fixed',
+    bottom : '0',
 }
 export default class Footer extends React.Component {
     constructor(props){
@@ -41,6 +42,7 @@ export default class Footer extends React.Component {
                     <Tab label="About" />
                     <Tab label="CV" />
                     <Tab label="Projects" />
+                    <Tab label="Contact" />
                 </Tabs>
             </Paper>);
     }

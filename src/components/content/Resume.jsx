@@ -1,7 +1,8 @@
 import React from 'react';
-import { Typography, Paper } from '@material-ui/core/';
+import { Slide, Typography, Paper, Chip } from '@material-ui/core/';
 import Grid from '@material-ui/core/Grid';
 import CV from './cv'
+
 
 const styles = {
     Paper: {
@@ -63,18 +64,18 @@ const cvData = {
 
 export default props =>
     <div>
-        <Typography variant='display3'>
+        <Typography variant='h3'>
             Resume
         </Typography>
         <Paper>
             <h1>
                 Key skills/competences
             </h1>
-            <ul>
+            <div>
                 {CV.skills.map(element =>
-                    <li>{element}</li>
+                    <div>{element}</div>
                 )}
-            </ul>
+            </div>
         </Paper>
         <Paper>
             <h1>
@@ -85,16 +86,29 @@ export default props =>
                     <div>
 
 
-                            <h3>{job.company}</h3>
-                            <h4>{job.title}</h4>
-                            <label>From:</label>
-                            <div>{job.date_start}</div>
-                            <label>To:</label>
-                            <div>{job.date_end}</div>
-                            <label>Responsibilities:</label>
-                            {job.responsibilities.map(res =>
-                                <div>{res}</div> )}
+                        <h3>{job.company}</h3>
+                        <h4>{job.title}</h4>
+                        <label>From:</label>
+                        <div>{job.date_start}</div>
+                        <label>To:</label>
+                        <div>{job.date_end}</div>
+                        <label>Responsibilities:</label>
+                        {job.responsibilities.map(res =>
+                            <div>{res}</div>)}
 
+
+                        <div>
+                            <label>Skills used:</label>
+                            <Slide in={true} direction='right'>
+                                <div>
+                                    {job.skills.map(skill =>
+                                        <Chip
+                                            label={skill}
+                                        />
+                                    )}
+                                </div>
+                            </Slide>
+                        </div>
                     </div>
                 )}
             </div>

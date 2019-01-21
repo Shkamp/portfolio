@@ -28,7 +28,7 @@ export default {
             title: "Lead Android/Full-Stack developer for teh Pan Map app",
             company: "Panoramske Karte",
             responsibilities: [
-                "Designing and plannin the CMS and API for the Pan Map app",
+                "Designing and planning the CMS and API for the Pan Map app",
                 "Implementing the CMS",
                 "Developing the Pan Map Android app",
                 "Designing and implementing the new cross-platform Pan Map app in Unity"
