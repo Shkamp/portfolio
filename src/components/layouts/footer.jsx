@@ -1,11 +1,8 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { positions } from '@material-ui/system';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faGithub, faGitlab, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 const style = {

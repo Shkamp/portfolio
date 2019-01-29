@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography, Paper } from '@material-ui/core/';
-import Grid from '@material-ui/core/Grid';
 import YouTube from 'react-youtube';
 import Img from 'react-image';
 import unis_logo from './img/unis_logo.png'

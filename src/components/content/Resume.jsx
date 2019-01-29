@@ -1,6 +1,5 @@
 import React from 'react';
 import { Slide, Typography, Paper, Chip } from '@material-ui/core/';
-import Grid from '@material-ui/core/Grid';
 import CV from './cv'
 
 

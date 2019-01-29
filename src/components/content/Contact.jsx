@@ -1,6 +1,5 @@
 import React from 'react';
-import { Typography, Paper } from '@material-ui/core/';
-import { MyMapComponent } from "./Map"
+import { Typography, } from '@material-ui/core/';
 
 const styles = {
     Paper: {
