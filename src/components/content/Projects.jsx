@@ -25,7 +25,7 @@ export default props =>
             </YouTube>
         </Paper>
         <Paper>
-            <Img src={unis_logo} alt="UNIS" />
+            <Img src={unis_logo} alt="UNIS"  style={{width:"100 vw"}}/>
         </Paper>
         <Paper>
             <a href="https://github.com/Shkamp?tab=repositories">My Github page</a>
